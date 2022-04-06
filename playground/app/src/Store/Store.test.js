@@ -10,9 +10,11 @@ jest.mock('../features', ()=>{
         }
         return state;
     }
+    
     return {
-        __esModule: true,
-       reducers: {mockFeature:mockReducer}
+        mockFeature: {
+           reducer:mockReducer
+        }
     }
 })
 
